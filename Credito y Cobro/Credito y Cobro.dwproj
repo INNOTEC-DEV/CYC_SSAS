@@ -1,0 +1,512 @@
+﻿<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <ProductVersion>15.0.19623.0</ProductVersion>
+  <SchemaVersion>9.0.2.10</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkZGw1MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAiIHhtbG5zOmRkbDUwMF81MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAvNTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <Database>
+    <Name>Credito y Cobro.database</Name>
+    <FullPath>Credito y Cobro.database</FullPath>
+  </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Credito y Cobro.cube</Name>
+      <FullPath>Credito y Cobro.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Credito y Cobro.partitions</Name>
+          <FullPath>Credito y Cobro.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Estado Cuenta SC Anterior.dim</Name>
+      <FullPath>Estado Cuenta SC Anterior.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Estado Cuenta SC.dim</Name>
+      <FullPath>Estado Cuenta SC.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Estado Cuenta.dim</Name>
+      <FullPath>Estado Cuenta.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Documento.dim</Name>
+      <FullPath>Fecha Documento.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Pago.dim</Name>
+      <FullPath>Fecha Pago.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Grupo Compra.dim</Name>
+      <FullPath>Grupo Compra.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Cartera EMMA.dim</Name>
+      <FullPath>Indicador Cartera EMMA.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Cliente Nuevo.dim</Name>
+      <FullPath>Indicador Cliente Nuevo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Cliente Pre-Aprobado.dim</Name>
+      <FullPath>Indicador Cliente Pre-Aprobado.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Cuenta Desplazamiento.dim</Name>
+      <FullPath>Indicador Cuenta Desplazamiento.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador de Rodamiento.dim</Name>
+      <FullPath>Indicador de Rodamiento.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Demanda.dim</Name>
+      <FullPath>Indicador Demanda.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Empleado.dim</Name>
+      <FullPath>Indicador Empleado.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Fiador.dim</Name>
+      <FullPath>Indicador Fiador.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Incobrable.dim</Name>
+      <FullPath>Indicador Incobrable.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Institucional.dim</Name>
+      <FullPath>Indicador Institucional.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Tasa 0.dim</Name>
+      <FullPath>Indicador Tasa 0.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Venta Distintiva.dim</Name>
+      <FullPath>Indicador Venta Distintiva.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>LEM Disponible.dim</Name>
+      <FullPath>LEM Disponible.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Monto Colocado.dim</Name>
+      <FullPath>Monto Colocado.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Mora.dim</Name>
+      <FullPath>Mora.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Nivel de Riesgo Cliente.dim</Name>
+      <FullPath>Nivel de Riesgo Cliente.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Nivel de Riesgo Cuenta.dim</Name>
+      <FullPath>Nivel de Riesgo Cuenta.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Número Físico.dim</Name>
+      <FullPath>Número Físico.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ocupación Cliente Nuevo.dim</Name>
+      <FullPath>Ocupación Cliente Nuevo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Oferta.dim</Name>
+      <FullPath>Oferta.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD ATRASO EN DIAS.dim</Name>
+      <FullPath>TD ATRASO EN DIAS.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD BUCKET RODAMIENTO.dim</Name>
+      <FullPath>TD BUCKET RODAMIENTO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD CAJERO.dim</Name>
+      <FullPath>TD CAJERO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD CANTIDAD HIJOS CLIENTE.dim</Name>
+      <FullPath>TD CANTIDAD HIJOS CLIENTE.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD CLIENTE.dim</Name>
+      <FullPath>TD CLIENTE.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD CMM DISPONIBLE.dim</Name>
+      <FullPath>TD CMM DISPONIBLE.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD CMM.dim</Name>
+      <FullPath>TD CMM.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD COMPANIA.dim</Name>
+      <FullPath>TD COMPANIA.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD CUENTA.dim</Name>
+      <FullPath>TD CUENTA.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD DIA PAGO.dim</Name>
+      <FullPath>TD DIA PAGO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD EDAD.dim</Name>
+      <FullPath>TD EDAD.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD EMAIL 1.dim</Name>
+      <FullPath>TD EMAIL 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD EMAIL 2.dim</Name>
+      <FullPath>TD EMAIL 2.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD ESTADO CIVIL CLIENTE.dim</Name>
+      <FullPath>TD ESTADO CIVIL CLIENTE.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD ESTADO PLAN ESPECIAL.dim</Name>
+      <FullPath>TD ESTADO PLAN ESPECIAL.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD EXPEDIENTE.dim</Name>
+      <FullPath>TD EXPEDIENTE.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD FECHA APLICACION.dim</Name>
+      <FullPath>TD FECHA APLICACION.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD FECHA INICIO PAGO.dim</Name>
+      <FullPath>TD FECHA INICIO PAGO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD FECHA PROCESO.dim</Name>
+      <FullPath>TD FECHA PROCESO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD FECHA VENCIMIENTO.dim</Name>
+      <FullPath>TD FECHA VENCIMIENTO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD GESTOR.dim</Name>
+      <FullPath>TD GESTOR.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD HORA APLICACION.dim</Name>
+      <FullPath>TD HORA APLICACION.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD IND COMPRA APPEMA.dim</Name>
+      <FullPath>TD IND COMPRA APPEMA.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD IND COMPRA CONDICIONADA.dim</Name>
+      <FullPath>TD IND COMPRA CONDICIONADA.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD IND ESTADO.dim</Name>
+      <FullPath>TD IND ESTADO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD IND EXENTA GRAVADA.dim</Name>
+      <FullPath>TD IND EXENTA GRAVADA.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD IND EXPRESS.dim</Name>
+      <FullPath>TD IND EXPRESS.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD IND FINANCIERO.dim</Name>
+      <FullPath>TD IND FINANCIERO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD IND GARANTIA ADICIONAL.dim</Name>
+      <FullPath>TD IND GARANTIA ADICIONAL.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD IND OFERTA CREDITO.dim</Name>
+      <FullPath>TD IND OFERTA CREDITO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD IND PLAN ESPECIAL.dim</Name>
+      <FullPath>TD IND PLAN ESPECIAL.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD IND REFINANCIAMIENTO.dim</Name>
+      <FullPath>TD IND REFINANCIAMIENTO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD IND SOBREGIRO CMM.dim</Name>
+      <FullPath>TD IND SOBREGIRO CMM.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD IND SOBREGIRO LEM.dim</Name>
+      <FullPath>TD IND SOBREGIRO LEM.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD LATITUD CASA.dim</Name>
+      <FullPath>TD LATITUD CASA.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD LATITUD TRABAJO.dim</Name>
+      <FullPath>TD LATITUD TRABAJO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD LEM.dim</Name>
+      <FullPath>TD LEM.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD LONGITUD CASA.dim</Name>
+      <FullPath>TD LONGITUD CASA.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD LONGITUD TRABAJO.dim</Name>
+      <FullPath>TD LONGITUD TRABAJO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD MONTO RODAMIENTO.dim</Name>
+      <FullPath>TD MONTO RODAMIENTO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD MORA CIERRE.dim</Name>
+      <FullPath>TD MORA CIERRE.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD MORA PROYECTADO.dim</Name>
+      <FullPath>TD MORA PROYECTADO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD NUMERO CUOTA ASISTENCIA.dim</Name>
+      <FullPath>TD NUMERO CUOTA ASISTENCIA.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD NUMERO CUOTA PAGADO.dim</Name>
+      <FullPath>TD NUMERO CUOTA PAGADO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD NUMERO PLAN.dim</Name>
+      <FullPath>TD NUMERO PLAN.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD OCUPACION CLIENTE.dim</Name>
+      <FullPath>TD OCUPACION CLIENTE.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD OTROS INGRESOS CLIENTE.dim</Name>
+      <FullPath>TD OTROS INGRESOS CLIENTE.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD PLAZO PLAN ESPECIAL.dim</Name>
+      <FullPath>TD PLAZO PLAN ESPECIAL.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD PLAZO.dim</Name>
+      <FullPath>TD PLAZO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD PORCENTAJE PRIMA CLIENTE.dim</Name>
+      <FullPath>TD PORCENTAJE PRIMA CLIENTE.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD PORCENTAJE PRIMA.dim</Name>
+      <FullPath>TD PORCENTAJE PRIMA.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD PRIMER PAGO DEFECTO.dim</Name>
+      <FullPath>TD PRIMER PAGO DEFECTO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD RUTA CLIENTE.dim</Name>
+      <FullPath>TD RUTA CLIENTE.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD SALARIO CLIENTE.dim</Name>
+      <FullPath>TD SALARIO CLIENTE.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD SCORE COBRO.dim</Name>
+      <FullPath>TD SCORE COBRO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD SCORE CREDITO.dim</Name>
+      <FullPath>TD SCORE CREDITO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD SUPERVISOR.dim</Name>
+      <FullPath>TD SUPERVISOR.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD TASA INTERES.dim</Name>
+      <FullPath>TD TASA INTERES.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD TIENDA.dim</Name>
+      <FullPath>TD TIENDA.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD TIPO CLIENTE REVISION.dim</Name>
+      <FullPath>TD TIPO CLIENTE REVISION.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD TIPO CLIENTE.dim</Name>
+      <FullPath>TD TIPO CLIENTE.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD TIPO DOCUMENTO.dim</Name>
+      <FullPath>TD TIPO DOCUMENTO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD VENDEDOR.dim</Name>
+      <FullPath>TD VENDEDOR.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Producto.dim</Name>
+      <FullPath>Tipo Producto.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Transacción Asistencia.dim</Name>
+      <FullPath>Transacción Asistencia.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Transacción Cuenta.dim</Name>
+      <FullPath>Transacción Cuenta.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Transacción Recibo.dim</Name>
+      <FullPath>Transacción Recibo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TD FORMA PAGO.dim</Name>
+      <FullPath>TD FORMA PAGO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Estado de Seguimiento Actual.dim</Name>
+      <FullPath>Estado de Seguimiento Actual.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Estado de Seguimiento Anterior.dim</Name>
+      <FullPath>Estado de Seguimiento Anterior.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Número de Fondo.dim</Name>
+      <FullPath>Número de Fondo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Número Plan.dim</Name>
+      <FullPath>Número Plan.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Documento Recibos.dim</Name>
+      <FullPath>Tipo Documento Recibos.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Cancelación.dim</Name>
+      <FullPath>Fecha Cancelación.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Aprobación.dim</Name>
+      <FullPath>Fecha Aprobación.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Vigencia.dim</Name>
+      <FullPath>Fecha Vigencia.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Detalle Venta EMMA.dim</Name>
+      <FullPath>Detalle Venta EMMA.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Comercio Afiliado.dim</Name>
+      <FullPath>Comercio Afiliado.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Número de Operación.dim</Name>
+      <FullPath>Número de Operación.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tienda Preaprobado.dim</Name>
+      <FullPath>Tienda Preaprobado.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Gestionada.dim</Name>
+      <FullPath>Indicador Gestionada.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Contrato Afiliación EMMA Cierre.dim</Name>
+      <FullPath>Fecha Contrato Afiliación EMMA Cierre.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Incobrable.dim</Name>
+      <FullPath>Fecha Incobrable.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador Finalizado.dim</Name>
+      <FullPath>Indicador Finalizado.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fecha Contrato Afiliación EMMA Apertura.dim</Name>
+      <FullPath>Fecha Contrato Afiliación EMMA Apertura.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Vendedor Paga Comisión.dim</Name>
+      <FullPath>Vendedor Paga Comisión.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Indicador FINS.dim</Name>
+      <FullPath>Indicador FINS.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tipo Reintegros.dim</Name>
+      <FullPath>Tipo Reintegros.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>DWH.ds</Name>
+      <FullPath>DWH.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>vDWH.dsv</Name>
+      <FullPath>vDWH.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>DWH</Id>
+            <Name>DWH</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=.;Integrated Security=SSPI;Initial Catalog=DWH</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>DWH</Id>
+            <Name>DWH</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

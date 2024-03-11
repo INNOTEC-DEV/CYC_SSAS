@@ -1,0 +1,401 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="afddf9e4-ac80-4b5f-9d01-3ab0294a74c4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>TD TIENDA</ID>
+  <Name>Tiendas</Name>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2970" scrolltop="-7951" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10954" y="21378" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TD_TIENDA" left="20" top="-6826" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="6244" height="11826" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e000064180000322e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="COM_TD_TIENDA" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2970</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-7951</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-6826</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="b5a056fe-1d32-49d5-976a-ea5cbcf9cf5e">
+    <DataSourceViewID>vDWH</DataSourceViewID>
+  </Source>
+  <UnknownMember>Hidden</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="48d88a9a-ec7c-4061-8635-d044ea33c141">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="e4073180-e197-4988-ad13-a1c8c84c1d9f">
+      <ID>ID TIENDA</ID>
+      <Name>ID TIENDA</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>298</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c46b683d-7f2f-4fc6-98dc-6da0437577f4">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2f9dee92-bb89-4784-a90b-16bdc3d4070a">
+            <TableID>COM_TD_TIENDA</TableID>
+            <ColumnID>ID_TIENDA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="7680a8d5-b927-479b-8cb0-b9c1ac39ecfd">
+          <AttributeID>DES TIENDA</AttributeID>
+          <Name>DES TIENDA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6519e8e5-47d9-464b-bd81-64e6bbef4d08">
+          <AttributeID>DES CADENA</AttributeID>
+          <Name>DES CADENA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="32994f95-3490-47d2-9a2b-795b0f818f09">
+          <AttributeID>DES CENTRO COSTO</AttributeID>
+          <Name>DES CENTRO COSTO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="409aad5c-c8b0-4cd2-b497-cd335e3db4e4">
+          <AttributeID>DES ZONA</AttributeID>
+          <Name>DES ZONA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d9ee08c9-d026-43e1-8f40-58536a74f090">
+          <AttributeID>DES LATITUD</AttributeID>
+          <Name>DES LATITUD</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d41ab00f-a976-4b57-9d2b-cee0de4914d0">
+          <AttributeID>DES LONGITUD</AttributeID>
+          <Name>DES LONGITUD</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c0c82c94-f06e-4063-a202-987f4aa4076f">
+          <AttributeID>DES REGION SOCIOECONOMICA</AttributeID>
+          <Name>DES REGION SOCIOECONOMICA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ef54263a-1c73-4832-a884-6ba082909ace">
+          <AttributeID>DES IND CENTRALIZADA</AttributeID>
+          <Name>DES_IND_CENTRALIZADA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="393f3cc8-839f-4774-8147-1bd5b150aac4">
+          <AttributeID>DES IND CERRADA</AttributeID>
+          <Name>DES IND CERRADA</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="566ec2e6-ddaa-4fd2-8818-124c5cdacb7d">
+      <ID>DES TIENDA</ID>
+      <Name>Tienda</Name>
+      <EstimatedCount>243</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="be5e4375-a787-44ea-869a-d073f4dc3dd0">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="154fead9-f934-48ee-8d6d-be64c7329e2e">
+            <TableID>COM_TD_TIENDA</TableID>
+            <ColumnID>COD_COMPANIA</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="707b4f74-cc63-41f9-821c-b36bd0a4f797">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1d2c79ff-a473-4eb7-8bf0-abeff3eb4110">
+            <TableID>COM_TD_TIENDA</TableID>
+            <ColumnID>COD_TIENDA</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="036a2fe0-dd81-4c5e-853b-5adca33b49ec">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f60eb9ab-2a8e-47c9-8fdf-cc28b0a679ea">
+            <TableID>COM_TD_TIENDA</TableID>
+            <ColumnID>COD_CADENA</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="e912a898-9590-45a9-a1fe-a616da6461be">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7a673b99-4472-4efc-99f4-3f78b6691ef0">
+            <TableID>COM_TD_TIENDA</TableID>
+            <ColumnID>COD_CENTRO_COSTO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="baa2fd00-040a-4e51-87f4-2de2184ca92b">
+        <DataType>WChar</DataType>
+        <DataSize>40</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b7e9e353-2d93-4845-a4ec-c38b4201ea6a">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>DES_TIENDA</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="85adfd01-69a7-40df-a92e-eb792c1e7500">
+        <DataType>WChar</DataType>
+        <DataSize>40</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e00c90a8-8ed9-448a-bb06-4115c2447102">
+          <TableID>COM_TD_TIENDA</TableID>
+          <ColumnID>DES_TIENDA</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="99a4a68b-35cf-4eaa-9577-2ce3183c49e4">
+      <ID>DES CADENA</ID>
+      <Name>DES CADENA</Name>
+      <EstimatedCount>5</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="75bff275-7f0a-433a-b926-0b95b8693520">
+          <DataType>WChar</DataType>
+          <DataSize>12</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e1ef6bd8-9543-4a17-9842-c95fbb142bd7">
+            <TableID>COM_TD_TIENDA</TableID>
+            <ColumnID>DES_CADENA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="de9d527b-f7ef-46e6-80b7-44223c1114d6">
+      <ID>DES CENTRO COSTO</ID>
+      <Name>Centro de Costo</Name>
+      <EstimatedCount>230</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0e188201-6324-4fee-ba93-e8399a72dee7">
+          <DataType>WChar</DataType>
+          <DataSize>40</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2f32fe49-b105-4f5a-9c48-8a65d42d6576">
+            <TableID>COM_TD_TIENDA</TableID>
+            <ColumnID>DES_CENTRO_COSTO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a2705eaa-7dbd-430b-b25e-110cb6bade2e">
+      <ID>DES ZONA</ID>
+      <Name>Zonas Comercial</Name>
+      <EstimatedCount>15</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2a69849e-6036-4dea-8804-c0b36167b3ce">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c4b31c76-f9b4-470d-abde-f3c4a228e330">
+            <TableID>COM_TD_TIENDA</TableID>
+            <ColumnID>DES_ZONA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b931c68d-4365-4a47-9b77-c4b05428e368">
+      <ID>DES LATITUD</ID>
+      <Name>Latitud</Name>
+      <EstimatedCount>175</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="464d72a1-af48-4502-bf83-4d2eb32e6777">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="98bca051-5a1f-4a15-b068-d6309833b482">
+            <TableID>COM_TD_TIENDA</TableID>
+            <ColumnID>DES_LATITUD</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b796f654-c918-4993-898b-7e19b4fbb9a3">
+      <ID>DES LONGITUD</ID>
+      <Name>Longitud</Name>
+      <EstimatedCount>175</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="10bd32f7-d422-4e87-a4ac-dcae846b8790">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="828d11b0-32c1-4254-84b9-a44dbfdb5409">
+            <TableID>COM_TD_TIENDA</TableID>
+            <ColumnID>DES_LONGITUD</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="95b1e084-8f75-4093-b338-23224732215f">
+      <ID>DES REGION SOCIOECONOMICA</ID>
+      <Name>Región Socioeconómica</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="44968b70-9d0e-483e-b0e3-2d82530a9da0">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3e846af2-1aed-47a7-a4cc-7860b75cbd70">
+            <TableID>COM_TD_TIENDA</TableID>
+            <ColumnID>DES_REGION_SOCIOECONOMICA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ee19ecdb-578c-4661-98de-a98d51949f05">
+      <ID>DES IND CENTRALIZADA</ID>
+      <Name>DES_IND_CENTRALIZADA</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ce335fd5-ddaf-48b1-8b7f-4bbb62a51d7a">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="648ca1ea-f778-410e-ac31-4c8431d61138">
+            <TableID>COM_TD_TIENDA</TableID>
+            <ColumnID>DES_IND_CENTRALIZADA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cc0fe3bc-9bb5-459d-8583-d7ac94abdd98">
+      <ID>DES IND CERRADA</ID>
+      <Name>DES IND CERRADA</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="798401b2-d26f-497a-beba-e7b2934538e3">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7ad2711d-cd2c-445f-ac74-900984549f67">
+            <TableID>COM_TD_TIENDA</TableID>
+            <ColumnID>DES_IND_CERRADA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="a4543b6c-514d-4dee-82c0-a63d1257d3a3">
+      <ID>Hierarchy</ID>
+      <Name>Tiendas</Name>
+      <Levels>
+        <Level dwd:design-time-name="64a3b0ef-801f-4809-8d06-6a44319cbaf5">
+          <ID>DES CADENA</ID>
+          <Name>Cadena</Name>
+          <SourceAttributeID>DES CADENA</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="28eb1760-6ffd-4800-8a82-729ff8c4fc65">
+          <ID>DES TIENDA</ID>
+          <Name>Tienda</Name>
+          <SourceAttributeID>DES TIENDA</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="6a34cd77-19e9-450a-becd-fd9d7e5a5714">
+          <ID>DES CENTRO COSTO</ID>
+          <Name>Centro de Costo</Name>
+          <SourceAttributeID>DES CENTRO COSTO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="2e11ac25-4576-4b36-9224-29f060fdeeeb">
+      <ID>Hierarchy 1</ID>
+      <Name>Zona Comercial</Name>
+      <Levels>
+        <Level dwd:design-time-name="b17d0165-7aa5-4fb9-904f-aaed78b4375d">
+          <ID>DES ZONA</ID>
+          <Name>Zona Comercial</Name>
+          <SourceAttributeID>DES ZONA</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="f82eb223-2c06-4ca8-bc3b-abee452959f6">
+          <ID>DES REGION SOCIOECONOMICA</ID>
+          <Name>Región Socioeconómica</Name>
+          <SourceAttributeID>DES REGION SOCIOECONOMICA</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="94b8d2cd-4d99-44ff-b96b-d687c461e2ed">
+      <ID>Hierarchy 3</ID>
+      <Name>Indicador Tienda Centralizada</Name>
+      <Levels>
+        <Level dwd:design-time-name="56222d95-c093-4ff0-a96e-d4491d60c100">
+          <ID>DES IND CENTRALIZADA</ID>
+          <Name>Indicador Tienda Centralizada</Name>
+          <SourceAttributeID>DES IND CENTRALIZADA</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="5fbe8a43-b20c-429f-90fb-567f245bc312">
+      <ID>Hierarchy 2</ID>
+      <Name>Indicador Tienda Cerrada</Name>
+      <Levels>
+        <Level dwd:design-time-name="19de0881-1917-4b5e-9506-bf77cbd7dc05">
+          <ID>DES IND CERRADA</ID>
+          <Name>Indicador Tienda Cerrada</Name>
+          <SourceAttributeID>DES IND CERRADA</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

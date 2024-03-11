@@ -1,0 +1,237 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="56ad444a-018e-4c81-90cc-68aa9eb52e1d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Comercio Afiliado</ID>
+  <Name>Comercio Afiliado</Name>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3393" scrolltop="-9115" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9525" y="11853" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TD_COMERCIO_AFILIADO" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4948" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000541300004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="CYC_TD_COMERCIO_AFILIADO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3393</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-9115</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="60df43d4-0545-4442-8bcb-d4a6bf55c806">
+    <DataSourceViewID>vDWH</DataSourceViewID>
+  </Source>
+  <UnknownMember>Hidden</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="ac86f2ea-8fb1-45dd-a9ee-49d44c1e9e05">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="a63333f2-e001-4b1f-8c88-c4a1a96c3360">
+      <ID>ID COMERCIO AFILIADO</ID>
+      <Name>ID COMERCIO AFILIADO</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cfb21db9-2b5b-4717-8ea0-38f8507dbedb">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f4c79a8b-7e11-4cd9-a534-d261523bffb6">
+            <TableID>CYC_TD_COMERCIO_AFILIADO</TableID>
+            <ColumnID>ID_COMERCIO_AFILIADO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="8a190eba-253d-498a-8902-5f92ec73b11f">
+          <AttributeID>COD COMERCIO AFILIADO</AttributeID>
+          <Name>Código Comercio Afiliado</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="36a31580-2d21-4017-b6c1-4ed53f9bc4d5">
+          <AttributeID>COD SUCURSAL AFILIADO</AttributeID>
+          <Name>Código Sucursal Afiliado</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="381c0112-bea0-4eb7-bf20-5fff53a89c14">
+          <AttributeID>DES COMERCIO AFILIADO</AttributeID>
+          <Name>DES COMERCIO AFILIADO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="836b1be7-dc2d-4e44-a272-07314e523b07">
+          <AttributeID>DES SUCURSAL AFILIADO</AttributeID>
+          <Name>DES SUCURSAL AFILIADO</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7e7da75d-ff36-4170-86a3-e2cb9960cd31">
+      <ID>COD COMERCIO AFILIADO</ID>
+      <Name>Código Comercio Afiliado</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d89f9469-3054-4654-bd66-0ae8a2204ee7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="05ebf1fb-ca18-4b6c-b5c9-4cd1f93f2e16">
+            <TableID>CYC_TD_COMERCIO_AFILIADO</TableID>
+            <ColumnID>COD_COMERCIO_AFILIADO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d45bf3c0-e3d6-453d-b8a3-b5cba5be2640">
+      <ID>COD SUCURSAL AFILIADO</ID>
+      <Name>Código Sucursal Afiliado</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0ba90afb-db37-4167-9a6a-2875592be9d3">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="644378ae-c5ea-46c7-95dd-c85f1c24fa05">
+            <TableID>CYC_TD_COMERCIO_AFILIADO</TableID>
+            <ColumnID>COD_SUCURSAL_AFILIADO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="aaba97c7-067b-4371-80a1-38efdd2d7f21">
+      <ID>DES COMERCIO AFILIADO</ID>
+      <Name>DES COMERCIO AFILIADO</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5dfebc85-d2ae-41b7-a8d0-afca5564d3c5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5f42e8e1-21ee-4f02-ac19-0fb52b615dac">
+            <TableID>CYC_TD_COMERCIO_AFILIADO</TableID>
+            <ColumnID>COD_COMERCIO_AFILIADO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ef62e5b0-fecc-4d4c-8d75-4514c01a4374">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f1fb75df-6e4c-4475-8e9b-c655e0331852">
+          <TableID>CYC_TD_COMERCIO_AFILIADO</TableID>
+          <ColumnID>DES_COMERCIO_AFILIADO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ValueColumn dwd:design-time-name="454dbd06-c097-48c1-9628-215dfeeb7c84">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="86bf3625-20b5-48be-b492-d805392dfbcd">
+          <TableID>CYC_TD_COMERCIO_AFILIADO</TableID>
+          <ColumnID>DES_COMERCIO_AFILIADO</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b47cd624-fa3e-40b1-94b9-2b042479b87c">
+      <ID>DES SUCURSAL AFILIADO</ID>
+      <Name>DES SUCURSAL AFILIADO</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="20cc3abd-fdf8-4df5-9148-fb62afe84626">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4ed76d6f-c8aa-4518-825f-4eb45880a43b">
+            <TableID>CYC_TD_COMERCIO_AFILIADO</TableID>
+            <ColumnID>COD_SUCURSAL_AFILIADO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="4f676ec8-1c48-4b80-950b-7b569bf10747">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9af95b68-121d-47e8-8281-320f7dbaf0a5">
+          <TableID>CYC_TD_COMERCIO_AFILIADO</TableID>
+          <ColumnID>DES_SUCURSAL_AFILIADO</ColumnID>
+        </Source>
+      </NameColumn>
+      <ValueColumn dwd:design-time-name="a0ac9ef0-9d4d-46ca-b45c-d29309f36487">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="00255ef5-f324-41d2-ba61-06a01916aacc">
+          <TableID>CYC_TD_COMERCIO_AFILIADO</TableID>
+          <ColumnID>DES_SUCURSAL_AFILIADO</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="b73a9677-1acb-4c55-8429-42bb01fe50d1">
+      <ID>Hierarchy</ID>
+      <Name>Comercio Afiliado</Name>
+      <Levels>
+        <Level dwd:design-time-name="3d17d01b-bda2-48f5-90c4-750434d5e650">
+          <ID>DES COMERCIO AFILIADO</ID>
+          <Name>Comercio Afiliado</Name>
+          <SourceAttributeID>DES COMERCIO AFILIADO</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="4499a7ae-32b3-41dd-98b8-2ddce4b5ca85">
+          <ID>DES SUCURSAL AFILIADO</ID>
+          <Name>Sucursal Afiliado</Name>
+          <SourceAttributeID>DES SUCURSAL AFILIADO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

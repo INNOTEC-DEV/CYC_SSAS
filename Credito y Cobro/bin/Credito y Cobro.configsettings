@@ -1,0 +1,381 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>DWH</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=.;Integrated Security=SSPI;Initial Catalog=DWH</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>Estado Cuenta SC Anterior</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Estado Cuenta SC</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Estado Cuenta</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Documento</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Pago</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Grupo Compra</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Cartera EMMA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Cliente Nuevo</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Cliente Pre-Aprobado</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Cuenta Desplazamiento</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador de Rodamiento</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Demanda</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Empleado</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Fiador</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Incobrable</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Institucional</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Tasa 0</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Venta Distintiva</ID>
+      </Dimension>
+      <Dimension>
+        <ID>LEM Disponible</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Monto Colocado</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Mora</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD NIVEL RIESGO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Nivel de Riesgo Cuenta</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Número Físico</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Ocupación Cliente Nuevo</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Oferta</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD ATRASO EN DIAS</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD BUCKET RODAMIENTO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD CAJERO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD CANTIDAD HIJOS CLIENTE</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD CLIENTE</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD CMM DISPONIBLE</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD CMM</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD COMPANIA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD CUENTA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD DIA PAGO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD EDAD</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD EMAIL 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD EMAIL 2</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD ESTADO CIVIL CLIENTE</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD ESTADO PLAN ESPECIAL</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD EXPEDIENTE</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD FECHA APLICACION</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD FECHA INICIO PAGO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD FECHA PROCESO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD FECHA VENCIMIENTO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD GESTOR</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD HORA APLICACION</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD IND COMPRA APPEMA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD IND COMPRA CONDICIONADA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD IND ESTADO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD IND EXENTA GRAVADA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD IND EXPRESS</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD IND FINANCIERO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD IND GARANTIA ADICIONAL</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD IND OFERTA CREDITO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD IND PLAN ESPECIAL</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD IND REFINANCIAMIENTO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD IND SOBREGIRO CMM</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD IND SOBREGIRO LEM</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD LATITUD CASA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD LATITUD TRABAJO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD LEM</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD LONGITUD CASA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD LONGITUD TRABAJO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD MONTO RODAMIENTO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD MORA CIERRE</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD MORA PROYECTADO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD NUMERO CUOTA ASISTENCIA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD NUMERO CUOTA PAGADO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD NUMERO PLAN</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD OCUPACION CLIENTE</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD OTROS INGRESOS CLIENTE</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD PLAZO PLAN ESPECIAL</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD PLAZO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD PORCENTAJE PRIMA CLIENTE</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD PORCENTAJE PRIMA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD PRIMER PAGO DEFECTO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD RUTA CLIENTE</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD SALARIO CLIENTE</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD SCORE COBRO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD SCORE CREDITO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD SUPERVISOR</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD TASA INTERES</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD TIENDA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD TIPO CLIENTE REVISION</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD TIPO CLIENTE</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD TIPO DOCUMENTO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD VENDEDOR</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo Producto</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Transacción Asistencia</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Transacción Cuenta</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Transacción Recibo</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TD FORMA PAGO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Estado de Seguimiento Actual</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Estado de Seguimiento Anterior</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Número de Fondo</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Número Plan</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo Documento Recibos</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Cancelación</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Aprobación</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Vigencia</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Detalle Venta EMMA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Comercio Afiliado</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Número de Operación</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tienda Preaprobado</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Gestionada</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Contrato Afiliación EMMA Cierre</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Incobrable</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador Finalizado</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Fecha Contrato Afiliación EMMA Apertura</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Vendedor Paga Comisión</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Indicador FINS</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tipo Reintegros</ID>
+      </Dimension>
+    </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>Credito y Cobro</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>TH CARTERA</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH RECIBOS</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>TH ASISTENCIAS</ID>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Cartera</ID>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+      <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>

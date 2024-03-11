@@ -1,0 +1,803 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Credito y Cobro</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>KpQUwsruP5hUHTQ5lPzgoMG6Nmc=3/3/2022 9:06:32 AM4/22/2022 3:37:21 PM</TimeStamp>
+        <ID>
+          <String>DWH</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>f/Z0t4C56LqK0c0kL5bLL0v3Xsw=1/9/2023 4:13:23 PM4/22/2022 3:37:21 PM</TimeStamp>
+        <ID>
+          <String>vDWH</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>mbvIA6/p1g42cXXHCaW6U8Ypn4M=3/15/2022 3:44:15 PM4/25/2022 2:02:26 PM</TimeStamp>
+        <ID>
+          <String>Estado Cuenta SC Anterior</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>9E7IqEFIrtY/fsGUrvRFC3+auHc=3/15/2022 3:22:55 PM4/25/2022 2:02:24 PM</TimeStamp>
+        <ID>
+          <String>Estado Cuenta SC</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>cZhPInhk4qxwSENNKqHHbBckIy8=3/15/2022 3:44:38 PM4/25/2022 2:02:24 PM</TimeStamp>
+        <ID>
+          <String>Estado Cuenta</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>UpzlAtXsfXS+64Sp4PN5+fitrb0=10/8/2021 4:59:28 PM4/25/2022 2:02:24 PM</TimeStamp>
+        <ID>
+          <String>Fecha Documento</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>b9Ow0l3L7znzj1H6lLnaVrCP3G8=5/5/2022 5:49:06 PM4/25/2022 2:02:24 PM</TimeStamp>
+        <ID>
+          <String>Fecha Pago</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>6cTW3F87epnkdViOts1cgmb2tC8=5/5/2022 2:03:22 PM4/25/2022 2:02:24 PM</TimeStamp>
+        <ID>
+          <String>Grupo Compra</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>qwCEjJoLaphomhBqeB0C8I1iWUk=10/8/2021 4:59:28 PM4/25/2022 2:02:24 PM</TimeStamp>
+        <ID>
+          <String>Indicador Cartera EMMA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>8UZvoNKGzA9S5m/oO8Fh6kmLmE8=5/5/2022 2:03:22 PM4/25/2022 2:02:24 PM</TimeStamp>
+        <ID>
+          <String>Indicador Cliente Nuevo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>jpMHdivyTGOHYP4GACK8ZN8c8uE=10/8/2021 4:59:28 PM4/25/2022 2:02:24 PM</TimeStamp>
+        <ID>
+          <String>Indicador Cliente Pre-Aprobado</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>s//Bprn1vZyChoEBbaQ7apAFaX4=10/8/2021 4:59:28 PM4/25/2022 2:02:24 PM</TimeStamp>
+        <ID>
+          <String>Indicador Cuenta Desplazamiento</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>D0yozMFj5CLjWO2cFPOQCfY3hbE=10/8/2021 4:59:28 PM4/25/2022 2:02:24 PM</TimeStamp>
+        <ID>
+          <String>Indicador de Rodamiento</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>fASXv5KB9rc4aNFqZpyy+MA0go8=10/8/2021 4:59:28 PM4/25/2022 2:02:24 PM</TimeStamp>
+        <ID>
+          <String>Indicador Demanda</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>wQ3V4itmrtWIN6s0P2vCk+rIx+8=10/8/2021 4:59:28 PM4/25/2022 2:02:24 PM</TimeStamp>
+        <ID>
+          <String>Indicador Empleado</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>o2y5URZ7TP3KZPN6maMIsHTqXQ4=10/8/2021 4:59:28 PM4/25/2022 2:02:24 PM</TimeStamp>
+        <ID>
+          <String>Indicador Fiador</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>copsSbW6WV9nKFhAGastpWidy24=10/8/2021 4:59:28 PM4/25/2022 2:02:24 PM</TimeStamp>
+        <ID>
+          <String>Indicador Incobrable</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>TkleMxyKjDLIOD0Hr6cYHdzSW+w=10/8/2021 4:59:28 PM4/25/2022 2:02:24 PM</TimeStamp>
+        <ID>
+          <String>Indicador Institucional</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>oScbj45w6S/CvqP5janKj7ayDbE=5/5/2022 2:03:22 PM4/25/2022 2:02:24 PM</TimeStamp>
+        <ID>
+          <String>Indicador Tasa 0</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>RSHEg1xOxfil2wtjeD22dSwpOBU=10/8/2021 4:59:28 PM4/25/2022 2:02:24 PM</TimeStamp>
+        <ID>
+          <String>Indicador Venta Distintiva</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>f5q5ijif+NubE9magXa9k6yLblA=5/5/2022 2:03:23 PM4/25/2022 2:02:24 PM</TimeStamp>
+        <ID>
+          <String>LEM Disponible</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zrYWi6w7kin5YUuh/WgT9XioxCg=3/7/2022 4:32:08 PM4/25/2022 2:02:24 PM</TimeStamp>
+        <ID>
+          <String>Monto Colocado</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>NC2xXoUcp7jETbet+4+Z1inWGxI=3/7/2022 8:33:11 AM4/25/2022 2:02:24 PM</TimeStamp>
+        <ID>
+          <String>Mora</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>IbCD7HGL0hUohvj9Zlc62guOuMI=10/8/2021 3:35:57 PM4/25/2022 2:02:24 PM</TimeStamp>
+        <ID>
+          <String>TD NIVEL RIESGO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>o+TmIfMft244fR7bYFh3o3aaXtw=10/8/2021 4:59:28 PM4/25/2022 2:02:25 PM</TimeStamp>
+        <ID>
+          <String>Nivel de Riesgo Cuenta</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>GRE3tsUwOlD847NtyWWkqs0tkQ8=10/8/2021 4:59:28 PM4/25/2022 2:02:25 PM</TimeStamp>
+        <ID>
+          <String>Número Físico</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>abx0m39U7wvHcip4yAzyU9L41M0=10/8/2021 4:59:28 PM4/25/2022 2:02:25 PM</TimeStamp>
+        <ID>
+          <String>Ocupación Cliente Nuevo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>/g5Xie9CANzVQlP2pUH5VEKoCAI=10/8/2021 4:59:28 PM4/25/2022 2:02:25 PM</TimeStamp>
+        <ID>
+          <String>Oferta</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>GygARI+k+WxKXYO45ip6qrwKH8s=5/28/2021 11:36:52 AM4/22/2022 3:44:11 PM</TimeStamp>
+        <ID>
+          <String>TD ATRASO EN DIAS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Ri5e1CdowmQf69kPEHJrhASuxv4=3/4/2022 10:35:18 AM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD BUCKET RODAMIENTO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>UZkv5vDr+DTsGyCXz46ksLkv1Mg=5/28/2021 3:48:33 PM4/25/2022 2:02:25 PM</TimeStamp>
+        <ID>
+          <String>TD CAJERO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Od7c/KNpYVHxc9LHSykEN+hd7ns=3/4/2022 1:18:22 PM4/22/2022 3:44:11 PM</TimeStamp>
+        <ID>
+          <String>TD CANTIDAD HIJOS CLIENTE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>df2IXX/y4FVLR+i0psCu1BLIfRM=6/24/2022 3:48:51 PM4/22/2022 3:44:11 PM</TimeStamp>
+        <ID>
+          <String>TD CLIENTE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>RsSmOG42THVEBDYEhxkqX2oXtOI=7/22/2022 9:19:19 AM4/22/2022 3:44:11 PM</TimeStamp>
+        <ID>
+          <String>TD CMM DISPONIBLE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>MgxJRfRVB/P0YLi9u+q/9fvuV6U=5/31/2021 8:25:47 PM4/22/2022 3:44:11 PM</TimeStamp>
+        <ID>
+          <String>TD CMM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>g+7IQoeTn+y8Amkxt01IhCPqZ5I=5/28/2021 3:53:01 PM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD COMPANIA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>UtRDkfLPFdtfcKcYD3hGgG9Mpkw=6/17/2021 9:01:23 PM4/22/2022 3:44:11 PM</TimeStamp>
+        <ID>
+          <String>TD CUENTA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>6RxolhGl8g7VbgrIYT5nJFg4xOg=6/2/2021 6:05:44 AM4/22/2022 3:44:11 PM</TimeStamp>
+        <ID>
+          <String>TD DIA PAGO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>6w1iHDcWVb4OV+T+gW/WIvj7PiE=3/4/2022 4:31:18 PM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD EDAD</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>iMT0PMkci0dg4y6XscreZsafjio=5/28/2021 3:57:58 PM4/22/2022 3:44:13 PM</TimeStamp>
+        <ID>
+          <String>TD EMAIL 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gDMSw+eMy4gc1bhNMnIq2xbn3PU=5/28/2021 3:58:19 PM4/22/2022 3:44:13 PM</TimeStamp>
+        <ID>
+          <String>TD EMAIL 2</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>MqcUHZ2M1gypFmLWYlub4l8+7CA=5/28/2021 3:59:18 PM4/22/2022 3:44:11 PM</TimeStamp>
+        <ID>
+          <String>TD ESTADO CIVIL CLIENTE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>r4ixjkX1d6/rFG6EKLQ6dCc4EdM=5/28/2021 4:00:23 PM4/22/2022 3:44:13 PM</TimeStamp>
+        <ID>
+          <String>TD ESTADO PLAN ESPECIAL</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Y6jzTrBgWtinsERWeHVqufMxdFU=3/4/2022 4:34:37 PM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD EXPEDIENTE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>TTaQDMt++kRhw4HiP9d9mhWOcTE=5/27/2021 5:09:46 PM4/25/2022 2:02:25 PM</TimeStamp>
+        <ID>
+          <String>TD FECHA APLICACION</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>G00nJPygfuvV9hPpMnXzrfR1CuY=5/27/2021 5:10:25 PM4/22/2022 3:44:11 PM</TimeStamp>
+        <ID>
+          <String>TD FECHA INICIO PAGO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>IgcIDvuELQMJLKOrqp3RoyINZ+k=5/27/2021 5:10:38 PM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD FECHA PROCESO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ZvZYWrOs8sEc55eCVZeOwukNVy8=5/27/2021 5:10:53 PM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD FECHA VENCIMIENTO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>a+6YIuhTR/83aa/uQUvbOVAfiIQ=3/4/2022 4:57:12 PM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD GESTOR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1tLH20/trIpBfr9YHWXkdjMYshQ=3/7/2022 8:56:36 AM4/25/2022 2:02:25 PM</TimeStamp>
+        <ID>
+          <String>TD HORA APLICACION</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ZYefHepY9GG58TGlJlq80Fkwmsw=5/28/2021 4:04:58 PM4/22/2022 3:44:13 PM</TimeStamp>
+        <ID>
+          <String>TD IND COMPRA APPEMA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>B3LUVmYN2UrvsNuIhdL4wPGAlmg=5/28/2021 4:05:17 PM4/22/2022 3:44:13 PM</TimeStamp>
+        <ID>
+          <String>TD IND COMPRA CONDICIONADA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zsnwtNdZYQsKsovlLSLCGd81raQ=5/28/2021 4:05:34 PM4/22/2022 3:44:11 PM</TimeStamp>
+        <ID>
+          <String>TD IND ESTADO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+8g6vYNLg6xH4H2q4XAdDgvc8DY=5/28/2021 4:06:11 PM4/22/2022 3:44:13 PM</TimeStamp>
+        <ID>
+          <String>TD IND EXENTA GRAVADA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>CpRoPcKC7ch9V8nd4Ui7xQZKVCU=5/28/2021 4:06:27 PM4/22/2022 3:44:13 PM</TimeStamp>
+        <ID>
+          <String>TD IND EXPRESS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>9yNDOv3OshYCmr3qKFusubFQyHw=5/28/2021 4:06:43 PM4/22/2022 3:44:13 PM</TimeStamp>
+        <ID>
+          <String>TD IND FINANCIERO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>vZS1TNskdn/i86UUkEWfoiJj41Y=5/28/2021 4:07:02 PM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD IND GARANTIA ADICIONAL</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>cZ2KaHHmWanfaTz8380HvMzd2gM=5/28/2021 4:07:19 PM4/22/2022 3:44:13 PM</TimeStamp>
+        <ID>
+          <String>TD IND OFERTA CREDITO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>mFe6ueAvnsh32Sh7TVZmS3urahc=5/28/2021 4:07:42 PM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD IND PLAN ESPECIAL</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>LD7S9U/WXe1whYlhOWstisLUSQI=5/28/2021 4:08:04 PM4/22/2022 3:44:13 PM</TimeStamp>
+        <ID>
+          <String>TD IND REFINANCIAMIENTO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>b3rlZGt/XZdx3kiJs3Mk2xEkyqc=5/28/2021 4:08:22 PM4/22/2022 3:44:13 PM</TimeStamp>
+        <ID>
+          <String>TD IND SOBREGIRO CMM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ZZc+8ApDvtxiGjdw7Jyj2M19wBw=5/28/2021 4:08:44 PM4/22/2022 3:44:13 PM</TimeStamp>
+        <ID>
+          <String>TD IND SOBREGIRO LEM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>uDJMjnxgdGb5R1u4EjPD2e2PvWg=5/28/2021 4:10:44 PM4/22/2022 3:44:11 PM</TimeStamp>
+        <ID>
+          <String>TD LATITUD CASA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>f52kztbt2C9KmFOhix8Tph5dM7E=5/28/2021 4:10:59 PM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD LATITUD TRABAJO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>9YZZ4wNQj/wtjtg94VsiHnA+ybU=5/28/2021 4:11:15 PM4/22/2022 3:44:11 PM</TimeStamp>
+        <ID>
+          <String>TD LEM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>QJC0AGtClHU5uMA4JHnWo5elRPI=5/28/2021 4:11:40 PM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD LONGITUD CASA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>iwxuYp3s1GOi1Ptg5uEaIuutWfA=3/3/2022 9:10:15 AM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD LONGITUD TRABAJO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>vqVOm21oDWvPm8qq2k5AnE2XibU=3/4/2022 4:39:05 PM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD MONTO RODAMIENTO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>8qtrz5jyojN6sRUW/qLRb0nGaxE=6/4/2021 4:41:08 PM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD MORA CIERRE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>pkHGa+ryhF4c77K3qpzuQ4WWoB0=6/4/2021 4:48:52 PM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD MORA PROYECTADO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>4Dgx4XR+gqbkSU3n5fgE8Hsh2ag=3/8/2022 12:03:52 PM4/25/2022 2:02:25 PM</TimeStamp>
+        <ID>
+          <String>TD NUMERO CUOTA ASISTENCIA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Cd3oH2iXOD/5Q801Hl7ODS2neb0=5/28/2021 4:12:49 PM4/25/2022 2:02:25 PM</TimeStamp>
+        <ID>
+          <String>TD NUMERO CUOTA PAGADO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>sdAIwbDoRU0zgAgkWyS4KZQs4a0=3/4/2022 4:41:28 PM4/22/2022 3:44:11 PM</TimeStamp>
+        <ID>
+          <String>TD NUMERO PLAN</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>wuwEdmmf+brrQwayAfI+ZIv4PIY=5/28/2021 4:14:09 PM4/22/2022 3:44:11 PM</TimeStamp>
+        <ID>
+          <String>TD OCUPACION CLIENTE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>J5vu1blhzCaM/yXhx6Epp+Sh6GI=6/1/2021 10:43:27 AM4/22/2022 3:44:11 PM</TimeStamp>
+        <ID>
+          <String>TD OTROS INGRESOS CLIENTE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>LYmYR4VyfqBxWC9PfRcEjn1RVwQ=6/17/2021 8:55:55 PM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD PLAZO PLAN ESPECIAL</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>50kW2iawYZQrJd2xHdwoKkkthfY=6/1/2021 4:11:41 PM4/22/2022 3:44:11 PM</TimeStamp>
+        <ID>
+          <String>TD PLAZO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>yUlGKQVqX8JZPpMMvLo3Y1+Sw+4=6/1/2021 5:32:36 PM4/22/2022 3:44:13 PM</TimeStamp>
+        <ID>
+          <String>TD PORCENTAJE PRIMA CLIENTE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>HYnRg/HXH2GyVaqIyVju/VQj4G0=5/28/2021 4:16:50 PM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD PORCENTAJE PRIMA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>A97yaRfpci+3p9Ml6tDCZm6ihus=10/8/2021 4:59:28 PM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD PRIMER PAGO DEFECTO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1TTvgcmInD8AogwEc8INqzDrF24=5/28/2021 5:20:12 PM4/25/2022 2:02:25 PM</TimeStamp>
+        <ID>
+          <String>TD RUTA CLIENTE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>O0ZyxBgsXV+vdH4W2IERv9KaxqY=5/28/2021 4:21:38 PM4/22/2022 3:44:11 PM</TimeStamp>
+        <ID>
+          <String>TD SALARIO CLIENTE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>9tvvVql3A+ewIbQrs/5DKJAe4dc=5/19/2021 9:19:57 AM4/22/2022 3:44:11 PM</TimeStamp>
+        <ID>
+          <String>TD SCORE COBRO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>/M76h0k8QOjaprTr8Tf/dCWP/YY=5/28/2021 4:31:19 PM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD SCORE CREDITO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>8Izyy6EXtDFqhV1l+IC11bDhoSQ=5/28/2021 9:59:10 AM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD SUPERVISOR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>uDZkZ8mr9YL1vkMqFOEcKQMGc6U=5/28/2021 4:25:47 PM4/22/2022 3:44:11 PM</TimeStamp>
+        <ID>
+          <String>TD TASA INTERES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>RkQ71ivv6+MDhZRTgbwYr+Eirwk=5/5/2022 2:03:24 PM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD TIENDA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>U4t3+vDXcUWvmrDp68/UjhbneHw=1/9/2023 4:26:39 PM4/22/2022 3:44:11 PM</TimeStamp>
+        <ID>
+          <String>TD TIPO CLIENTE REVISION</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>p3vaJSaXmkQEeKDrcrabKOZh1pA=5/19/2021 9:22:09 AM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD TIPO CLIENTE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ZM+GO30rVQn05CJy2vFiSQ+Tnds=9/28/2021 11:21:36 AM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD TIPO DOCUMENTO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>hVyNOsZQFNURIZ30Xx6SdrDsvlY=4/25/2022 3:33:41 PM4/22/2022 3:44:12 PM</TimeStamp>
+        <ID>
+          <String>TD VENDEDOR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>h9AwfI21/Xn/iYPknQNQzlxRAHQ=5/5/2022 2:03:24 PM4/25/2022 2:02:25 PM</TimeStamp>
+        <ID>
+          <String>Tipo Producto</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>lksEvOqqpJ3COzPh6ZTGkoZvtYM=10/8/2021 4:59:27 PM4/25/2022 2:02:26 PM</TimeStamp>
+        <ID>
+          <String>Transacción Asistencia</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>6OAqi9/o4uVu2dsZapxKL3W3lMY=10/8/2021 4:59:28 PM4/25/2022 2:02:26 PM</TimeStamp>
+        <ID>
+          <String>Transacción Cuenta</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>6RUvEmFEADm4PePU//40RvxCNxM=10/8/2021 4:59:28 PM4/25/2022 2:02:26 PM</TimeStamp>
+        <ID>
+          <String>Transacción Recibo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>PMEOexgl2Br65K2Ec7c0BMHgjx8=5/28/2021 4:02:54 PM4/25/2022 2:02:25 PM</TimeStamp>
+        <ID>
+          <String>TD FORMA PAGO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Mvf+ngTXIJLYWoRM9E0khTOF4SE=5/5/2022 5:49:06 PM5/3/2022 4:22:30 PM</TimeStamp>
+        <ID>
+          <String>Estado de Seguimiento Actual</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>tfXoX2Uh1nvFZESYq0rmWRh5Vuw=5/5/2022 5:49:06 PM5/3/2022 4:29:56 PM</TimeStamp>
+        <ID>
+          <String>Estado de Seguimiento Anterior</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>/A7Y82YBR1qaeRpQ2Ls7Odb94IE=6/24/2022 3:57:22 PM6/24/2022 3:44:29 PM</TimeStamp>
+        <ID>
+          <String>Número de Fondo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>NMoUXkAIeKBOlhZHYiaUvH4C3SU=6/24/2022 3:57:10 PM6/24/2022 3:46:14 PM</TimeStamp>
+        <ID>
+          <String>Número Plan</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Pawpcai6+OfXvYtr020WrlaP/f4=10/20/2022 3:30:10 PM10/20/2022 3:28:20 PM</TimeStamp>
+        <ID>
+          <String>Tipo Documento Recibos</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>8B6MUgQB4jKuaf6Gb7GZ3dqUJPk=12/28/2022 5:35:07 PM12/28/2022 5:33:23 PM</TimeStamp>
+        <ID>
+          <String>Fecha Cancelación</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>cp3CMvfFVwfCl2WBTlHobdcEocE=12/28/2022 5:38:13 PM12/28/2022 5:36:51 PM</TimeStamp>
+        <ID>
+          <String>Fecha Aprobación</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>o3nbOXZ3wVKRtyeiF/A0/Jlzeo0=12/28/2022 5:40:05 PM12/28/2022 5:39:00 PM</TimeStamp>
+        <ID>
+          <String>Fecha Vigencia</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>sdCcP0K6L+p1bnrLMTbNGWCXei0=12/28/2022 5:41:30 PM12/28/2022 5:41:05 PM</TimeStamp>
+        <ID>
+          <String>Detalle Venta EMMA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>DupkM/einecHCE/Xi+IkvWofFgg=12/30/2022 5:52:59 PM12/28/2022 5:43:27 PM</TimeStamp>
+        <ID>
+          <String>Comercio Afiliado</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>FkMHa5P4okDqtMmCtShFLRHHF1k=12/28/2022 5:47:27 PM12/28/2022 5:47:03 PM</TimeStamp>
+        <ID>
+          <String>Número de Operación</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>F1HIn0bQCCipchptly0s59H+vKE=12/28/2022 5:49:02 PM12/28/2022 5:48:23 PM</TimeStamp>
+        <ID>
+          <String>Tienda Preaprobado</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>FwhkgcACeYHlXxGag6O/6B7bGwE=12/28/2022 5:50:34 PM12/28/2022 5:50:03 PM</TimeStamp>
+        <ID>
+          <String>Indicador Gestionada</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>vhCVkPK0dHH0aDC+PmcSI0J12xU=12/30/2022 6:21:58 PM4/22/2022 3:44:11 PMj3EHMqepOULmGoeALpwnf/8FW7A=12/30/2022 6:21:57 PM4/22/2022 3:44:11 PM</TimeStamp>
+        <ID>
+          <String>Credito y Cobro</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>ie6QEvFhvBM+6H0vQf7z6ljO6tU=4/22/2022 3:36:06 PM4/22/2022 3:36:06 PM</TimeStamp>
+      <ID>
+        <String>Credito y Cobro</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2023-01-23T02:52:40.19Z</LastDeployed>
+</DeploymentSnapshot>

@@ -1,0 +1,1026 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="801749a7-d333-4d8d-94d8-91e01ca5fd89" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>TD CLIENTE</ID>
+  <Name>Cliente</Name>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1898" scrolltop="6074" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7430" y="13314" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TD_CLIENTE" left="-60" top="-4816" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="6456" height="18759" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00003819000047490000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="CYC_TD_CLIENTE" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1898</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>6074</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-60</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-4816</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="b49ea4a9-8f02-4dd3-951b-135e97b3c74d">
+    <DataSourceViewID>vDWH</DataSourceViewID>
+  </Source>
+  <UnknownMember>Hidden</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="197aebfe-1a53-4a37-943f-38377f5c7b82">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="832ccc1d-80ad-4f9f-8a81-fa7ff27b0c1e">
+      <ID>ID CLIENTE</ID>
+      <Name>ID CLIENTE</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>4430581</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f042b6d5-f199-4464-bed7-72c73bd09cc8">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="157c6e6e-0a2a-4f48-a15d-83570e6f6bef">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>ID_CLIENTE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="39860e47-995f-4ca4-be46-303ce94ce6d9">
+          <AttributeID>DES CLIENTE</AttributeID>
+          <Name>DES CLIENTE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="81ffa303-f902-457a-8dc5-64831adb19f3">
+          <AttributeID>DES TIPO IDENTIFICACION</AttributeID>
+          <Name>DES TIPO IDENTIFICACION</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2f2e1bef-7b12-4af7-9e4c-afb521b70c85">
+          <AttributeID>DES TIENDA REGISTRO</AttributeID>
+          <Name>DES TIENDA REGISTRO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2c0bb31e-415e-45e6-9564-00262c5e32c1">
+          <AttributeID>DES RUTA</AttributeID>
+          <Name>DES RUTA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a94321c6-f11d-4791-b34d-6f010e3bb2ac">
+          <AttributeID>DES FECHA NACIMIENTO</AttributeID>
+          <Name>DES FECHA NACIMIENTO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f6a0f8d8-acbc-41c2-9ac4-3bd169f0e036">
+          <AttributeID>DES GENRO</AttributeID>
+          <Name>DES GENRO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bba5504d-041b-434e-998b-590ee1a86ca7">
+          <AttributeID>DES INDICADOR CASA</AttributeID>
+          <Name>DES INDICADOR CASA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="554983c3-371b-4413-9f7b-c1f3ed9e2f0a">
+          <AttributeID>DES INDICADOR CARRO</AttributeID>
+          <Name>DES INDICADOR CARRO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b7b1aad1-05b9-4a54-812a-832940622953">
+          <AttributeID>DES INDICADOR TARJETA</AttributeID>
+          <Name>DES INDICADOR TARJETA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b3969a22-16b4-4745-a23a-08179a887842">
+          <AttributeID>DES CANTIDAD INNMUEBLES</AttributeID>
+          <Name>DES CANTIDAD INNMUEBLES</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ae5fe00d-e440-49dc-a3b8-705f17758071">
+          <AttributeID>DES ORDEN PATRONAL</AttributeID>
+          <Name>DES ORDEN PATRONAL</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c647d3a4-a0fe-4074-aee4-cfdef0f12866">
+          <AttributeID>DES NACIONALIDAD</AttributeID>
+          <Name>DES NACIONALIDAD</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="285ea2f2-96db-4fcf-997d-daa3a5b3191b">
+          <AttributeID>DES INDICADOR NACIONAL</AttributeID>
+          <Name>DES INDICADOR NACIONAL</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="147a535d-6ce3-4710-9aa0-fdba2e3b8ee5">
+          <AttributeID>DES TIPO CLIENTE</AttributeID>
+          <Name>DES TIPO CLIENTE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ab57a9c6-d2eb-4d0b-9d2d-334e8797c23b">
+          <AttributeID>DES PROVINCIA</AttributeID>
+          <Name>DES PROVINCIA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8c149e23-845d-460b-b3c5-1c17a58f5629">
+          <AttributeID>DES CANTON</AttributeID>
+          <Name>DES CANTON</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6158836b-b88f-494b-8584-0e9d1723be32">
+          <AttributeID>DES DISTRITO</AttributeID>
+          <Name>DES DISTRITO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="006f8746-e46b-415b-843d-f396c98a1d92">
+          <AttributeID>DES BARRIO</AttributeID>
+          <Name>DES BARRIO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f6118936-7323-4602-870d-f8714cc53d63">
+          <AttributeID>DES INDICADOR CLIENTE EMMA</AttributeID>
+          <Name>DES INDICADOR CLIENTE EMMA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="407a1abf-c892-4b2f-bbb9-2b2866e30e44">
+          <AttributeID>DES INDICADOR PROSPECTO</AttributeID>
+          <Name>DES INDICADOR PROSPECTO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="dab109c2-6a1c-43fc-8f91-891dbd953eec">
+          <AttributeID>COD CANTIDAD INMUEBLES</AttributeID>
+          <Name>COD CANTIDAD INMUEBLES</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a776442b-270c-472e-87e9-63eabb9e5b17">
+          <AttributeID>COD CLIENTE</AttributeID>
+          <Name>Código de Cliente</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8e8a2d41-d5fe-4874-90a1-f8dfca8dac7c">
+          <AttributeID>COD IDENTIFICACION</AttributeID>
+          <Name>COD IDENTIFICACION</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c571c90c-a016-4ebe-9476-b9d003037d29">
+          <AttributeID>DES INDICADOR ESTADO CLIENTE</AttributeID>
+          <Name>DES INDICADOR ESTADO CLIENTE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="daa00484-ca61-4990-b80a-4b87b4ca9250">
+          <AttributeID>COD IND TC HIST CRED</AttributeID>
+          <Name>COD IND TC HIST CRED</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ae9d1675-f132-4666-9c40-68d9250f0626">
+          <AttributeID>TELEFONO</AttributeID>
+          <Name>TELEFONO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e1387947-6088-4a47-8937-f5ca2e1a3e6d">
+          <AttributeID>TELEFONO2</AttributeID>
+          <Name>TELEFONO2</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e50ff047-2143-45fb-8d27-4ca2fab6f6f6">
+      <ID>DES CLIENTE</ID>
+      <Name>DES CLIENTE</Name>
+      <EstimatedCount>3859637</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="82418882-62e0-4e3c-a53f-46b885540a0e">
+          <DataType>WChar</DataType>
+          <DataSize>8</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e08ab9ca-af8e-4196-aede-d466b415b349">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>COD_CLIENTE</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="bc2b540b-9d9b-4924-afb4-1e0c8638df27">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="415ee87a-f858-4404-94be-afc3bb7113f3">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>COD_COMPANIA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="7771480c-62ac-4759-bd43-d7ca9e403389">
+        <DataType>WChar</DataType>
+        <DataSize>80</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b36c7875-90b7-4693-ae66-c3a7280bc5bb">
+          <TableID>CYC_TD_CLIENTE</TableID>
+          <ColumnID>DES_CLIENTE</ColumnID>
+        </Source>
+      </NameColumn>
+      <ValueColumn dwd:design-time-name="a3efab91-42e3-48b6-89bf-a7c66f1ff22f">
+        <DataType>WChar</DataType>
+        <DataSize>80</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e3a91cf1-9e83-4e14-82be-f2d4923b95d0">
+          <TableID>CYC_TD_CLIENTE</TableID>
+          <ColumnID>DES_CLIENTE</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f0fe06e6-fd4c-485b-a823-1286ee50c60e">
+      <ID>DES TIPO IDENTIFICACION</ID>
+      <Name>DES TIPO IDENTIFICACION</Name>
+      <EstimatedCount>7</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="120c9656-480d-4031-b941-d2f4bd39cf04">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e446f426-ee0d-4a1f-9783-c294350569bb">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>DES_TIPO_IDENTIFICACION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fa816f71-fb32-431a-9625-adf43d76ddde">
+      <ID>DES TIENDA REGISTRO</ID>
+      <Name>DES TIENDA REGISTRO</Name>
+      <EstimatedCount>220</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="57ca4de4-4c59-4825-8170-fd9a4ec8293e">
+          <DataType>WChar</DataType>
+          <DataSize>40</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a62ebc02-0328-4874-9510-3cd85f9cb2a8">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>DES_TIENDA_REGISTRO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a248d360-2be1-4635-9689-1f89c151f11f">
+      <ID>DES RUTA</ID>
+      <Name>DES RUTA</Name>
+      <EstimatedCount>9113</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="616c8e50-453a-47d6-ac13-e2b73796bb68">
+          <DataType>WChar</DataType>
+          <DataSize>600</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="90a0b65e-77b0-41ca-8b38-0d0f6a2ab7d4">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>DES_RUTA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="43cd5e65-dffb-464c-a521-957839a2c2cc">
+      <ID>DES FECHA NACIMIENTO</ID>
+      <Name>DES FECHA NACIMIENTO</Name>
+      <EstimatedCount>33463</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6e675106-efec-4950-8f35-f0791ae84774">
+          <DataType>WChar</DataType>
+          <DataSize>12</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="79b55a2b-9f14-44e9-aa81-9e8895fc700b">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>DES_FECHA_NACIMIENTO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bad943b2-0ea8-4ee8-9c6a-ba1c493d4fb5">
+      <ID>DES GENRO</ID>
+      <Name>DES GENRO</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f65491b3-2605-4bb2-abc0-c24d54397578">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="63a932d5-687f-4a72-a5f2-e3080a958c80">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>DES_GENRO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="aab0ce79-4c7e-44fe-a868-517e07ad6344">
+      <ID>DES INDICADOR CASA</ID>
+      <Name>DES INDICADOR CASA</Name>
+      <EstimatedCount>6</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7435b2ba-da57-4170-9ea8-4a4263e06139">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c0553f4d-a2f7-42e7-b241-2a83e21bab68">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>DES_INDICADOR_CASA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0b932f5e-cd9d-4fb0-92b9-31889551d68b">
+      <ID>DES INDICADOR CARRO</ID>
+      <Name>DES INDICADOR CARRO</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="467ada74-2322-4a60-b510-20d522c870c6">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8d25f4fa-cd77-4ab5-b0f4-a325676ca5c3">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>DES_INDICADOR_CARRO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0a31aa0f-667b-4dc6-bd2c-730397722780">
+      <ID>DES INDICADOR TARJETA</ID>
+      <Name>DES INDICADOR TARJETA</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="697de7ea-946a-4006-a63d-6243e45e2243">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ca6abbfd-1a00-4817-9059-6dc43ac3e34b">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>DES_INDICADOR_TARJETA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="296fa1b8-6d47-4694-b9cd-be6a7cb1ceed">
+      <ID>DES CANTIDAD INNMUEBLES</ID>
+      <Name>DES CANTIDAD INNMUEBLES</Name>
+      <EstimatedCount>36</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b3ece75b-e733-4856-a18a-ab04721e1ab7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5d4fae71-4dae-4ae2-95a5-45b503ee3ce0">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>COD_CANTIDAD_INMUEBLES</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1928d936-7b3d-4d43-858c-f427aa2f7752">
+      <ID>DES ORDEN PATRONAL</ID>
+      <Name>DES ORDEN PATRONAL</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="10331ec4-70a4-464c-940c-e41195be7df0">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="09b6cb19-287a-480a-a916-bb638deaf8f1">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>DES_ORDEN_PATRONAL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9b72b05d-21f7-4b20-83fa-052e8fcf4b19">
+      <ID>DES NACIONALIDAD</ID>
+      <Name>DES NACIONALIDAD</Name>
+      <EstimatedCount>2613</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="38e65e6a-ae04-47ef-a4fc-9f440f7d3dc4">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="daeb9b8d-8ec2-4012-aa74-a21a3e523565">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>DES_NACIONALIDAD</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="970210a7-fd55-4c07-8c90-cdb716bac93b">
+      <ID>DES INDICADOR NACIONAL</ID>
+      <Name>DES INDICADOR NACIONAL</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e3c60be0-736a-465b-8f68-2154a6c8fc04">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e8ddb718-5093-4aac-8bf6-1673c5b01c4c">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>DES_INDICADOR_NACIONAL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8abd8229-2b2b-452b-b984-d764dc3430d6">
+      <ID>DES TIPO CLIENTE</ID>
+      <Name>DES TIPO CLIENTE</Name>
+      <EstimatedCount>23</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9d6d8745-96e6-42e1-a999-8a0fff98544f">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="506fbe5c-e119-4a0f-a772-2363beca2364">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>DES_TIPO_CLIENTE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b172e422-6849-4d03-b7df-7ce86519e5b0">
+      <ID>DES PROVINCIA</ID>
+      <Name>DES PROVINCIA</Name>
+      <EstimatedCount>8</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8ee7096d-f56f-4b7e-adef-d79d202672da">
+          <DataType>WChar</DataType>
+          <DataSize>35</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c20da7b6-755b-4110-a090-1b5e239ddcbc">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>DES_PROVINCIA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="94fb5b47-70bb-48ab-ba92-7e0f0c25955a">
+      <ID>DES CANTON</ID>
+      <Name>DES CANTON</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7e60e0c9-c4e4-4239-8ce8-6ca1902174a7">
+          <DataType>WChar</DataType>
+          <DataSize>35</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="eae2a04d-d8da-439c-9160-61b591721a84">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>DES_CANTON</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ad0d2a11-2bb7-430a-8b26-53920a997109">
+      <ID>DES DISTRITO</ID>
+      <Name>DES DISTRITO</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="33895852-3682-4141-a92d-319a3a7b9e1d">
+          <DataType>WChar</DataType>
+          <DataSize>35</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aa9176ba-c79b-4004-a616-ad6f4bd3d974">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>DES_DISTRITO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="58368ce4-058f-46bf-bc89-5cc02308f70d">
+      <ID>DES BARRIO</ID>
+      <Name>DES BARRIO</Name>
+      <EstimatedCount>95</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="01f92c3e-16e1-4e99-a2cc-72f0670c22db">
+          <DataType>WChar</DataType>
+          <DataSize>35</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b308e9a7-ddd4-4c9c-9a9e-3d4eff22eb6c">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>DES_BARRIO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="94303c21-71ec-4689-b79d-618f84c2869e">
+        <DataType>WChar</DataType>
+        <DataSize>35</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2fe8c3a0-2d5b-4be5-b288-dd6d375ddbc8">
+          <TableID>CYC_TD_CLIENTE</TableID>
+          <ColumnID>DES_BARRIO</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="dbf6f974-40e5-44cf-a0a4-cc79e1ea5868">
+        <DataType>WChar</DataType>
+        <DataSize>35</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="83acafdc-5d7a-4a93-b975-6055796242cb">
+          <TableID>CYC_TD_CLIENTE</TableID>
+          <ColumnID>DES_BARRIO</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="03f117a9-1388-42e0-825b-921e508d9530">
+      <ID>DES INDICADOR CLIENTE EMMA</ID>
+      <Name>DES INDICADOR CLIENTE EMMA</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a62d181e-1572-4805-99f4-f38e90d3de73">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="33da073c-f939-4114-abdb-149e20895c6a">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>DES_INDICADOR_CLIENTE_EMMA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="900b3cc1-c25c-48c2-b147-a0f848415cce">
+      <ID>DES INDICADOR PROSPECTO</ID>
+      <Name>DES INDICADOR PROSPECTO</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5b2dae84-a535-4999-95ba-bd09c1dab6f8">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c08be110-2503-442b-9011-85ec9437101e">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>DES_INDICADOR_PROSPECTO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8e473f94-92ce-47c8-b826-45f055eec90a">
+      <ID>COD CANTIDAD INMUEBLES</ID>
+      <Name>COD CANTIDAD INMUEBLES</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1b1da74b-6896-4660-a0a2-0ba3563d0609">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9d842d31-8f5d-42d7-8061-d8203bab9111">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>COD_CANTIDAD_INMUEBLES</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="82fd85ee-3d79-44e5-870b-1a08edf7e1a4">
+      <ID>COD CLIENTE</ID>
+      <Name>Código de Cliente</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9e8fa0c5-f44d-4203-9faf-d875cdc611cd">
+          <DataType>WChar</DataType>
+          <DataSize>8</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5dfeee9d-3a87-4c39-a421-c0695abc9be2">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>COD_CLIENTE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ad744f0c-e44b-4ab9-8b2b-4382de93b1e9">
+      <ID>COD IDENTIFICACION</ID>
+      <Name>COD IDENTIFICACION</Name>
+      <EstimatedCount>4725996</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="22850dcc-d38b-4c1b-9544-8cd735e8eaaa">
+          <DataType>WChar</DataType>
+          <DataSize>8</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f36c3f51-f235-404a-959e-c775946971bc">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>COD_CLIENTE</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="c80401c1-71b5-4b34-afd1-aa7af80a39d3">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d2c00d9c-2338-4ccf-9096-4943add77a3e">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>COD_COMPANIA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="08704e68-2646-4cf9-b340-817be80788a3">
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="18692166-7f3a-4e7e-a5a5-09c9de1d51f9">
+          <TableID>CYC_TD_CLIENTE</TableID>
+          <ColumnID>COD_IDENTIFICACION</ColumnID>
+        </Source>
+      </NameColumn>
+      <ValueColumn dwd:design-time-name="8b48495f-faf7-4c38-bde7-ae960a69077e">
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="84b61a10-771e-4945-b080-45b65dfa2f1c">
+          <TableID>CYC_TD_CLIENTE</TableID>
+          <ColumnID>COD_IDENTIFICACION</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d1f39ed6-123e-4939-9a76-ee1b103b886e">
+      <ID>DES INDICADOR ESTADO CLIENTE</ID>
+      <Name>DES INDICADOR ESTADO CLIENTE</Name>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d97199c6-a5fb-48fb-80eb-6e9e9ceb7e83">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8955f882-c793-4bfc-807e-8c4e24e75611">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>DES_INDICADOR_ESTADO_CLIENTE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="731f6ff7-53a3-42ed-b287-2f219fdc7408">
+      <ID>COD IND TC HIST CRED</ID>
+      <Name>COD IND TC HIST CRED</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="12f08595-e019-47f3-a90a-8b46d10022fc">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2663ab39-6905-43c3-9f17-d98aacaf162c">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>COD_IND_TC_HIST_CRED</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c3ce99ea-7e66-48e5-8e2d-b7df8155ba7c">
+      <ID>TELEFONO</ID>
+      <Name>TELEFONO</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="deb8355e-8bb7-49cc-bff7-d7d2276f84b8">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d51b9e79-fd3a-48cd-8e37-8cfc0b9bb663">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>TELEFONO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="743bafa8-9242-4da1-9833-1e58cf5ee78b">
+      <ID>TELEFONO2</ID>
+      <Name>TELEFONO2</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="80146a48-3759-405e-bbed-d472934ea357">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8996ad44-167a-4ace-8414-39f5b8342d88">
+            <TableID>CYC_TD_CLIENTE</TableID>
+            <ColumnID>TELEFONO2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="e044e5e4-5031-4184-ab3e-d5ada4050efd">
+      <ID>Hierarchy 1</ID>
+      <Name>Cantidad de Inmuebles</Name>
+      <Levels>
+        <Level dwd:design-time-name="91704fa7-5e5c-4416-913d-c3fc4a041b61">
+          <ID>DES CANTIDAD INNMUEBLES</ID>
+          <Name>Cantidad de Inmuebles</Name>
+          <SourceAttributeID>DES CANTIDAD INNMUEBLES</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="79dd4383-bdb3-4383-a26f-9c12f7289068">
+      <ID>Hierarchy 3</ID>
+      <Name>Cliente</Name>
+      <Levels>
+        <Level dwd:design-time-name="f21f91bc-283e-4a2a-ba93-35cdb5ce448c">
+          <ID>DES CLIENTE</ID>
+          <Name>Cliente</Name>
+          <SourceAttributeID>DES CLIENTE</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="474c109c-e723-42fa-a7e3-c749b96c5adc">
+      <ID>Hierarchy 5</ID>
+      <Name>Fecha de Nacimiento</Name>
+      <Levels>
+        <Level dwd:design-time-name="54dfce82-8ac0-40bd-b70e-21089e322cf9">
+          <ID>DES FECHA NACIMIENTO</ID>
+          <Name>Fecha de Nacimiento</Name>
+          <SourceAttributeID>DES FECHA NACIMIENTO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="f95cb304-5649-4ba8-b0af-a0085769576e">
+      <ID>Hierarchy 6</ID>
+      <Name>Género</Name>
+      <Levels>
+        <Level dwd:design-time-name="2701a74d-2799-49a4-8101-c9d4172974ca">
+          <ID>DES GENRO</ID>
+          <Name>Género</Name>
+          <SourceAttributeID>DES GENRO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="6ad2f923-7216-4832-9c63-e67c175c7e32">
+      <ID>Hierarchy 7</ID>
+      <Name>Indicador de Carro</Name>
+      <Levels>
+        <Level dwd:design-time-name="856e556c-fc51-4ae4-bc9b-d00e6d6dccaf">
+          <ID>DES INDICADOR CARRO</ID>
+          <Name>Indicador de Carro</Name>
+          <SourceAttributeID>DES INDICADOR CARRO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="2f1ef270-37f7-4788-b6df-446831d7e15d">
+      <ID>Hierarchy 8</ID>
+      <Name>Indicador de Casa</Name>
+      <Levels>
+        <Level dwd:design-time-name="da04434b-1fcd-47e7-89b0-74b4634e3532">
+          <ID>DES INDICADOR CASA</ID>
+          <Name>Indicador de Casa</Name>
+          <SourceAttributeID>DES INDICADOR CASA</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="d4a93154-5aac-4458-8951-17ef426f4914">
+      <ID>Hierarchy 9</ID>
+      <Name>Indicador de Cliente EMMA</Name>
+      <Levels>
+        <Level dwd:design-time-name="76d3e7c9-3e42-41a2-bce3-962cc6b8cfbc">
+          <ID>DES INDICADOR CLIENTE EMMA</ID>
+          <Name>Indicador de Cliente EMMA</Name>
+          <SourceAttributeID>DES INDICADOR CLIENTE EMMA</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="ea5ce1f4-88c3-4910-82ec-2e9def2380b7">
+      <ID>Hierarchy 10</ID>
+      <Name>Indicador Nacional</Name>
+      <Levels>
+        <Level dwd:design-time-name="f853086a-d5e2-46e9-8af0-6462c12a793a">
+          <ID>DES INDICADOR NACIONAL</ID>
+          <Name>Indicador Nacional</Name>
+          <SourceAttributeID>DES INDICADOR NACIONAL</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="ba2eb46e-805a-45f7-a90f-34839bcf1a34">
+      <ID>Hierarchy 11</ID>
+      <Name>Indicador de Prospecto</Name>
+      <Levels>
+        <Level dwd:design-time-name="355022f0-b2cf-49b6-948f-f6e83d537d49">
+          <ID>DES INDICADOR PROSPECTO</ID>
+          <Name>Indicador de Prospecto</Name>
+          <SourceAttributeID>DES INDICADOR PROSPECTO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="499a588d-d6f4-449a-8a10-7ef834679671">
+      <ID>Hierarchy 12</ID>
+      <Name>Indicador de Tarjeta</Name>
+      <Levels>
+        <Level dwd:design-time-name="36d580fd-89b2-4e78-9133-a7c4f1368c14">
+          <ID>DES INDICADOR TARJETA</ID>
+          <Name>Indicador de Tarjeta</Name>
+          <SourceAttributeID>DES INDICADOR TARJETA</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="254f6982-fc08-4f44-8d38-4617cee7b9ac">
+      <ID>Hierarchy 13</ID>
+      <Name>Nacionalidad</Name>
+      <Levels>
+        <Level dwd:design-time-name="c026fa9c-e8e6-4817-a8da-8e4fecdb561e">
+          <ID>DES NACIONALIDAD</ID>
+          <Name>Nacionalidad</Name>
+          <SourceAttributeID>DES NACIONALIDAD</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="b65adcac-44ad-440b-a0e2-acf19691b9e7">
+      <ID>Hierarchy 14</ID>
+      <Name>Indicador Orden Patronal</Name>
+      <Levels>
+        <Level dwd:design-time-name="d44ce8ee-aa9f-42f5-9350-8d7cb5d3afee">
+          <ID>DES ORDEN PATRONAL</ID>
+          <Name>Indicador Orden Patronal</Name>
+          <SourceAttributeID>DES ORDEN PATRONAL</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="4a88547c-b200-4930-a7b1-ba9968f1e4c7">
+      <ID>Hierarchy 15</ID>
+      <Name>Ubicación</Name>
+      <Levels>
+        <Level dwd:design-time-name="7a79a036-d56d-491c-8b46-2a17864c602d">
+          <ID>DES PROVINCIA</ID>
+          <Name>Provincia</Name>
+          <SourceAttributeID>DES PROVINCIA</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="113d1c47-cb1b-41c0-9e18-8bbb38285c3b">
+          <ID>DES CANTON</ID>
+          <Name>Cantón</Name>
+          <SourceAttributeID>DES CANTON</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="953c2a25-24ef-4ea7-8dc4-f4b6916f2669">
+          <ID>DES DISTRITO</ID>
+          <Name>Distrito</Name>
+          <SourceAttributeID>DES DISTRITO</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="338df1a8-bcfd-4f0b-be4e-3daeb3a986dd">
+          <ID>DES BARRIO</ID>
+          <Name>Barrio</Name>
+          <SourceAttributeID>DES BARRIO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="178bc0dd-1e48-4dce-8b01-2191d6d02a68">
+      <ID>Hierarchy 16</ID>
+      <Name>Ruta</Name>
+      <Levels>
+        <Level dwd:design-time-name="f07d6873-a1c4-4588-a7aa-56b3633639ae">
+          <ID>DES RUTA</ID>
+          <Name>Ruta</Name>
+          <SourceAttributeID>DES RUTA</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="1af4480d-9c89-480f-a468-c8846dc71fe7">
+      <ID>Hierarchy 17</ID>
+      <Name>Tienda de Registro</Name>
+      <Levels>
+        <Level dwd:design-time-name="36e2dce6-5788-4028-b97c-a8d4a4e327a6">
+          <ID>DES TIENDA REGISTRO</ID>
+          <Name>Tienda de Registro</Name>
+          <SourceAttributeID>DES TIENDA REGISTRO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="5e07bae5-138e-4742-90e7-aba1320e0ba9">
+      <ID>Hierarchy 18</ID>
+      <Name>Tipo de Cliente</Name>
+      <Levels>
+        <Level dwd:design-time-name="5e40cfde-369b-4e71-9297-caccbe496cdc">
+          <ID>DES TIPO CLIENTE</ID>
+          <Name>Tipo de Cliente</Name>
+          <SourceAttributeID>DES TIPO CLIENTE</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="b3174da1-83c2-4232-90d9-f0a7cca13c00">
+      <ID>Hierarchy 19</ID>
+      <Name>Tipo de Identificación</Name>
+      <Levels>
+        <Level dwd:design-time-name="3551f085-79c7-4c13-a26c-2beddd4da681">
+          <ID>DES TIPO IDENTIFICACION</ID>
+          <Name>Tipo de Identificación</Name>
+          <SourceAttributeID>DES TIPO IDENTIFICACION</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="afe8f799-3809-498c-916c-2f3331f239db">
+      <ID>Hierarchy</ID>
+      <Name>Número Identificación</Name>
+      <Levels>
+        <Level dwd:design-time-name="a79506f6-1f8c-43a0-a966-89b5e8001d0f">
+          <ID>COD IDENTIFICACION</ID>
+          <Name>Número Identificación</Name>
+          <SourceAttributeID>COD IDENTIFICACION</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="b52563d8-6636-4bc9-9ba2-416ea4edf1fa">
+      <ID>Hierarchy 2</ID>
+      <Name>Indicador Estado Cliente</Name>
+      <Levels>
+        <Level dwd:design-time-name="6ed2f05d-70df-4af4-ab35-4afd02849036">
+          <ID>DES INDICADOR ESTADO CLIENTE</ID>
+          <Name>Indicador Estado Cliente</Name>
+          <SourceAttributeID>DES INDICADOR ESTADO CLIENTE</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="f4e4d8a3-c4a5-484c-b62b-824604498f1d">
+      <ID>Hierarchy 4</ID>
+      <Name>Indicador 3 Letras</Name>
+      <Levels>
+        <Level dwd:design-time-name="4281f0cb-7a81-492f-9d27-c1ca30def122">
+          <ID>COD IND TC HIST CRED</ID>
+          <Name>Indicador 3 Letras</Name>
+          <SourceAttributeID>COD IND TC HIST CRED</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="f9801a98-2083-47fb-a11f-9d64dd7ee333">
+      <ID>Hierarchy 20</ID>
+      <Name>Número de Teléfono</Name>
+      <Levels>
+        <Level dwd:design-time-name="e2fa7682-d4e6-4e7a-b0f4-957290f50644">
+          <ID>TELEFONO</ID>
+          <Name>Teléfono</Name>
+          <SourceAttributeID>TELEFONO</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="49187384-6e27-4948-9773-08c50d91885e">
+          <ID>TELEFONO2</ID>
+          <Name>Teléfono Adicional</Name>
+          <SourceAttributeID>TELEFONO2</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
